@@ -8,6 +8,7 @@ transformers=4.46.3
 pillow=10.2.0
 torch=2.1.0
 controlnet-aux=0.0.7
+tqdm=4.65.2
 ```
 
 Install them using `pip` if needed:
