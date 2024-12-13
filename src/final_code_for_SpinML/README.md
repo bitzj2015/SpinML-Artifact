@@ -1,30 +1,12 @@
-# Use synthetic data to train specialized ML models
+# README: Dataset Labeling and YOLO Training Pipeline
 
-# Required libraries
-To run the scripts, ensure the following libraries are installed:
-```
-pandas=1.5.2
-pillow=10.2.0
-torch=2.1.0
-torchvision=0.16.0
-tqdm=4.65.2
-```
-
-# Train a specialized MobileNet
-```
-python train_mobilenet.py --alpha $alpha --random_seed $seed --testdata $testdata --augdata $augdata
-```
-Example:
-```
-./train_mobilenet_example.sh
-```
-
-# Dataset Labeling and YOLO Training Pipeline
-This folder contains three scripts designed for `YOLO` model training:
+## Overview
+This repository contains three scripts designed to:
 1. **Label a synthetic dataset** using the `GroundedSAM` model.
 2. **Train and validate YOLO models** on the labeled dataset.
 3. **Run a full pipeline** to label datasets and train YOLO models sequentially.
 
+## Prerequisites
 Ensure you have the following packages installed:
 
 - Python 3.8+
@@ -48,7 +30,7 @@ Please refer to autodistill github page for other ways to install the package.
 
 ## Scripts
 
-### 1. `yolo_autolabelling_dataset.py`
+### 1. `label_dataset.py`
 This script labels images in a specified folder using the `GroundedSAM` model.
 
 #### Arguments:
@@ -60,7 +42,7 @@ This script labels images in a specified folder using the `GroundedSAM` model.
 
 #### Example:
 ```bash
-python yolo_autolabelling_dataset.py \
+python label_dataset.py \
   --input_folder /path/to/images \
   --output_folder /path/to/labeled_data \
   --prompt "pill bottle" \

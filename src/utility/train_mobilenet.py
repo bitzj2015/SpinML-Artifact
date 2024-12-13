@@ -1,8 +1,8 @@
 from torch.utils.data import random_split
 from torchvision import transforms
 from torch.utils.data import DataLoader
-from train_utils import *
-from data_utils import *
+from train_utils_mobilenet import *
+from data_utils_mobilenet import *
 import torch
 import argparse
 import random
