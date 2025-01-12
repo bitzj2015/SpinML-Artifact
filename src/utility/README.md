@@ -48,7 +48,7 @@ Please refer to autodistill github page for other ways to install the package.
 
 ## Scripts
 
-### 1. `yolo_autolabelling_dataset.py`
+### 1. `data_utils_yolo.py`
 This script labels images in a specified folder using the `GroundedSAM` model.
 
 #### Arguments:
@@ -60,7 +60,7 @@ This script labels images in a specified folder using the `GroundedSAM` model.
 
 #### Example:
 ```bash
-python yolo_autolabelling_dataset.py \
+python data_utils_yolo.py \
   --input_folder /path/to/images \
   --output_folder /path/to/labeled_data \
   --prompt "pill bottle" \
@@ -68,7 +68,7 @@ python yolo_autolabelling_dataset.py \
   --extension .png
 ```
 
-### 2. `train_yolo.py`
+### 2. `train_utils_yolo.py`
 This script trains and validates a YOLO model on the labeled dataset.
 
 #### Arguments:
@@ -81,7 +81,7 @@ This script trains and validates a YOLO model on the labeled dataset.
 
 #### Example:
 ```bash
-python train_yolo.py \
+python train_utils_yolo.py \
   --out_folder /path/to/labeled_data \
   --save_folder /path/to/models \
   --yolo_model yolov8n.pt \
@@ -89,7 +89,7 @@ python train_yolo.py \
   --epochs 200
 ```
 
-### 3. `pipeline.py`
+### 3. `train_yolo.py`
 This script integrates the labeling and YOLO training processes into a unified pipeline.
 
 #### Arguments:
@@ -105,7 +105,7 @@ This script integrates the labeling and YOLO training processes into a unified p
 
 #### Example:
 ```bash
-python pipeline.py \
+python train_yolo.py \
   --input_folder /path/to/images \
   --output_folder /path/to/labeled_data \
   --prompt "pill bottle" \
