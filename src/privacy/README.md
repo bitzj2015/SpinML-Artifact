@@ -30,7 +30,7 @@ Sanitizer: husky_L2_L0, Object: background, MI: 0.11319264028298671
 ```
 2. To measure the similarity (SIM) between synthetic image segments and raw image segments, run:
 ```
-python sim_img2img2.py
+python sim_img2img.py
 ```
 Example output:
 ```
