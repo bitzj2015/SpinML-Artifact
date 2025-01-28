@@ -4,7 +4,7 @@ Paper title: **SpinML: Customized Synthetic Data Generation for Private Training
 
 Artifacts HotCRP Id: **#18** (not your paper Id, but the artifacts id)
 
-Requested Badge: **Available**
+Requested Badge: **Functional**
 
 ## Description
 This artifact contains the scripts for running experiments described in this paper.
