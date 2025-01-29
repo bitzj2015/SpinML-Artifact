@@ -5,7 +5,7 @@ This README talks about the steps for data generation using the Hugging Face Dif
 
 ## Prerequisites
 
-- **Python**: Version 3.8 or higher.
+- **Python**: Version 3.10 or higher.
 - **GPU**: A CUDA-compatible GPU is recommended for efficient training and inference.
 - **NVIDIA Drivers**: Ensure that the appropriate NVIDIA drivers, CUDA Toolkit, and cuDNN are installed.
 
