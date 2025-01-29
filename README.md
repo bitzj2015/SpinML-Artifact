@@ -53,6 +53,16 @@ The experiments were performed on a server running `Ubuntu 20.04.1 LTS`. Hence L
   
   Note: Autodistill is modular. You'll need to install the autodistill package along with Base Model and Target Model plugins (which implement specific models). Please refer to autodistill github page for other ways to install the package and its required packages.
 
+4. Install the additional `ultralytics` package for the YOLO Training Pipeline:
+
+  ```
+  git clone https://github.com/ultralytics/ultralytics.git
+  cd ultralytics
+  pip install -e .
+  ```
+
+  Note: install the `ultralytics` package from its GitHub repository for the latest updates and details, follow the instructions provided in their [GitHub repository](https://github.com/ultralytics/ultralytics).
+
 ### Estimated Time and Storage Consumption
 It is expected to take a few weeks to reproduce all the experimental results. A server with storage 1TB is suggested.
 
