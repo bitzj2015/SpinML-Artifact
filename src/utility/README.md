@@ -35,6 +35,7 @@ Ensure you have the following packages installed:
   pip install -e .
   ```
 - Autodistill
+
 Autodistill is modular. You'll need to install the autodistill package (which defines the interfaces for the above concepts) along with Base Model and Target Model plugins (which implement specific models).
 
 By packaging these separately as plugins, dependency and licensing incompatibilities are minimized and new models can be implemented and maintained by anyone.
