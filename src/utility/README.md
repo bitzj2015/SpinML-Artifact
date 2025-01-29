@@ -27,7 +27,7 @@ This folder contains three scripts designed for `YOLO` model training:
 
 Ensure you have the following packages installed:
 
-- Python 3.8+
+- Python 3.10+
 - To install the `ultralytics` package from its GitHub repository for the latest updates and details, follow the instructions provided in their [GitHub repository](https://github.com/ultralytics/ultralytics).
   ```bash
   git clone https://github.com/ultralytics/ultralytics.git
@@ -36,16 +36,16 @@ Ensure you have the following packages installed:
   ```
 - Autodistill
 
-Autodistill is modular. You'll need to install the autodistill package (which defines the interfaces for the above concepts) along with Base Model and Target Model plugins (which implement specific models).
-
-By packaging these separately as plugins, dependency and licensing incompatibilities are minimized and new models can be implemented and maintained by anyone.
-
-Example:
-  ```bash
-  pip install autodistill autodistill-grounded-sam autodistill-yolov8
-  ```
-
-Please refer to autodistill github page for other ways to install the package.
+  Autodistill is modular. You'll need to install the autodistill package (which defines the interfaces for the above concepts) along with Base Model and Target Model plugins (which implement specific models).
+  
+  By packaging these separately as plugins, dependency and licensing incompatibilities are minimized and new models can be implemented and maintained by anyone.
+  
+  Example:
+    ```bash
+    pip install autodistill autodistill-grounded-sam autodistill-yolov8
+    ```
+  
+  Please refer to autodistill github page for other ways to install the package.
 
 ## Scripts
 
