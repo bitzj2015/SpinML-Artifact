@@ -4,11 +4,13 @@ This folder contains scripts to measure the privacy of customized synthetic data
 # Required libraries
 To run the scripts, ensure the following libraries are installed:
 ```
-transformers=4.46.3
-pillow=10.2.0
-torch=2.1.0
-controlnet-aux=0.0.7
-tqdm=4.65.2
+numpy==1.24.4
+pillow==10.2.0
+torch==2.1.0
+torchvision==0.16.0
+tqdm==4.65.2
+transformers==4.46.3
+controlnet-aux==0.0.7
 ```
 
 Install them using `pip` if needed:

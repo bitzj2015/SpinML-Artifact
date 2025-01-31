@@ -32,7 +32,6 @@ The experiments were performed on a server running `Ubuntu 20.04.1 LTS`. Hence L
 
   ```
   numpy==1.24.4
-  pandas==1.5.2
   pillow==10.2.0
   torch==2.1.0
   torchvision==0.16.0
@@ -44,6 +43,11 @@ The experiments were performed on a server running `Ubuntu 20.04.1 LTS`. Hence L
 3. Install the following additional Python libraries which are required to run various scripts under `src/utility/` folder:
 
   ```
+  pandas==1.5.2
+  pillow==10.2.0
+  torch==2.1.0
+  torchvision==0.16.0
+  tqdm==4.65.2
   autodistill==0.1.29
   autodistill-grounded-sam==0.1.2
   autodistill-yolov8==0.1.4
