@@ -1,8 +1,7 @@
 # Sample dataset for reproducing privacy and utility results
-Sample dataset link: https://drive.google.com/file/d/1iHlip0u6Vret3zHZCzmjSUi2-XIyZxDm/view?usp=sharing (Deprecated)
-
 A sample dataset of Husky images can be downloaded from the link given below:
-<link>
+
+Sequeira, R., Zhang, J., & Konstantinos, P. (2025). SpinML: Customized Synthetic Data Generation for Private Training of Specialized ML Models [Data set]. SpinML: Customized Synthetic Data Generation for Private Training of Specialized ML Models (SpinML), 25th Privacy Enhancing Technologies Symposium (PETS 2025). Zenodo. https://doi.org/10.5281/zenodo.14777572
 
 # SpinML Sample Dataset Overview
 
