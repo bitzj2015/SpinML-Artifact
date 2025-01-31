@@ -2,10 +2,6 @@
 
 Paper title: **SpinML: Customized Synthetic Data Generation for Private Training of Specialized ML Models**
 
-Artifacts HotCRP Id: **#18**
-
-Requested Badge: **Functional**
-
 ## Description
 This artifact contains the scripts for running experiments described in this paper.
 
@@ -18,9 +14,9 @@ Memory: 128GB RAM
 While these are not strict requirements, we recommend using a server with at least 16GB of GPU memory to successfully reproduce the experiments.
 
 ### Software Requirements
-The experiments were performed on a server running `Ubuntu 20.04.1 LTS`. Hence Linux environment is recommended for this project. This is not tested on another operating systems. 
+The experiments were performed on a server running `Ubuntu 20.04.1 LTS`. Hence, Linux environment is recommended for this project. This is not tested on another operating systems. 
 
-1. Install Python version 3.10. It is recommended to create and install packages in a virtual envrionment (e.g: conda). 
+1. Install Python version 3.10. It is recommended to create and install packages in a virtual environment (e.g: conda). 
 
   ```
   conda create -n spinml python=3.10 -y
@@ -57,7 +53,7 @@ The experiments were performed on a server running `Ubuntu 20.04.1 LTS`. Hence L
   
   Note: Autodistill is modular. You'll need to install the autodistill package along with Base Model and Target Model plugins (which implement specific models). Please refer to autodistill github page for other ways to install the package and its required packages.
 
-4. Install the additional `ultralytics` package for the YOLO Training Pipeline:
+4. Install the additional `ultralytics` package for the YOLO Training Pipeline under `src/utility/` folder:
 
   ```
   git clone https://github.com/ultralytics/ultralytics.git
@@ -67,25 +63,11 @@ The experiments were performed on a server running `Ubuntu 20.04.1 LTS`. Hence L
 
   Note: install the `ultralytics` package from its GitHub repository for the latest updates and details, follow the instructions provided in their [GitHub repository](https://github.com/ultralytics/ultralytics).
 
-### Estimated Time and Storage Consumption
-It is expected to take a few weeks to reproduce all the experimental results. A server with storage 1TB is suggested.
+### Purpose of Each Directory
+1. The folder `src/privacy` contains scripts for running both MI and SIM privacy measurement described in the paper. Please see `src/privacy/README.md` for details.
 
-## Environment 
+2. The folder `src/utility` contains scripts for training both MobileNet and YOLO models described in the paper. Please see `src/utility/README.md` for details.
 
-### Accessibility (All badges)
-This github repository will be kept for a long time
+3. The folder `src/diffusion_model` contains instructions on how to use diffusion models for synthetic data generation. Please see `src/diffusion_model/README.md` for details.
 
-### Set up the environment (Only for Functional and Reproduced badges)
-Please see `src/privacy/README.md` and `src/utility/README.md` for details.
-
-## Artifact Evaluation (Only for Functional and Reproduced badges)
-Please see `src/privacy/README.md` and `src/utility/README.md` for details.
-
-### Experiments 
-Please see `src/privacy/README.md` and `src/utility/README.md` for details.
-
-## Limitations (Only for Functional and Reproduced badges)
-N/A
-
-## Notes on Reusability (Only for Functional and Reproduced badges)
-N/A
+4. The folder `data` contains a sample husky dataset for reproducing privacy and utility results. Please see `data/README.md` for details.
