@@ -13,8 +13,8 @@ The dataset includes both **real** and **synthetic** images, allowing for an eva
 
 ## Dataset Structure
 
-The dataset is provided as a compressed **.tar.gz** file. Once extracted, the files are located in:  
-`/scratch/SpinML-Artifact/data/husky/`
+The dataset is provided as a compressed **.tar.gz** file. Once extracted, the files should locate in:  
+`./SpinML-Artifact/data/husky/`
 
 This directory contains two main subfolders:
 
