@@ -43,4 +43,4 @@ Sanitizer: husky_L1_L0, Object: background, SIM: 0.5705515742301941
 Sanitizer: husky_L2_L0, Object: foreground, SIM: 0.7166070938110352
 Sanitizer: husky_L2_L0, Object: background, SIM: 0.572185218334198
 ```
-
+3. Note that we provide a sample husky dataset under `data` folder for running the above scripts. Please download it according to the link in `data/README.md`, unzip it, and put `husky` data folder under `data` folder.

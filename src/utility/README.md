@@ -23,6 +23,9 @@ Example:
 ./train_mobilenet_example.sh
 ```
 
+Note that we provide a sample husky dataset under `data` folder for running the above scripts. Please download it according to the link in `data/README.md`, unzip it, and put `husky` data folder under `data` folder.
+
+
 # Dataset Labeling and YOLO Training Pipeline
 This folder contains three scripts designed for `YOLO` model training:
 1. **Label a synthetic dataset** using the `GroundedSAM` model.

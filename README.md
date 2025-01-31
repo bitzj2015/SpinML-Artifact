@@ -16,15 +16,16 @@ While these are not strict requirements, we recommend using a server with at lea
 ### Software Requirements
 The experiments were performed on a server running `Ubuntu 20.04.1 LTS`. Hence, Linux environment is recommended for this project. This is not tested on another operating systems. 
 
-1. Install Python version 3.10. It is recommended to create and install packages in a virtual environment (e.g: conda). 
+1. Install Python version 3.10 and required libraries. It is recommended to create and install packages in a virtual environment (e.g: conda). 
 
   ```
   conda create -n spinml python=3.10 -y
   conda activate spinml
   pip install --upgrade pip 
+  pip install -r requirements.txt
   ```
 
-2. Install the following Python libraries which are required to run scripts under `src/privacy/` folder:
+2. Specifically, the following Python libraries are required to run scripts under `src/privacy/` folder:
 
   ```
   numpy==1.24.4
@@ -36,7 +37,7 @@ The experiments were performed on a server running `Ubuntu 20.04.1 LTS`. Hence, 
   controlnet-aux==0.0.7
   ```
 
-3. Install the following additional Python libraries which are required to run various scripts under `src/utility/` folder:
+3. Specifically, the following additional Python libraries are required to run various scripts under `src/utility/` folder:
 
   ```
   pandas==1.5.2
@@ -53,7 +54,7 @@ The experiments were performed on a server running `Ubuntu 20.04.1 LTS`. Hence, 
   
   Note: Autodistill is modular. You'll need to install the autodistill package along with Base Model and Target Model plugins (which implement specific models). Please refer to autodistill github page for other ways to install the package and its required packages.
 
-4. Install the additional `ultralytics` package for the YOLO Training Pipeline under `src/utility/` folder:
+4. The additional `ultralytics` package is needed for the YOLO Training Pipeline under `src/utility/` folder:
 
   ```
   git clone https://github.com/ultralytics/ultralytics.git
